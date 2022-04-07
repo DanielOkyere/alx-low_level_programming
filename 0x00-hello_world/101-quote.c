@@ -1,10 +1,13 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <string.h>
 /**
  * main - main block
  * Return: 1
  */
 int main(void)
 {
-write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+int lengthOfText = strlen("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", lengthOfText);
 return (1);
 }
