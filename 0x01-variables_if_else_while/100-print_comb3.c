@@ -8,19 +8,28 @@
 
 int main(void)
 {
-	int i, j;
+	int i, j, k;
 
-	for (i = 0; i < 10; i++)
+	i = 0;
+
+	while (i < 100)
 	{
-		for (j = 1; j < 10; j++)
+		j = i % 10; /* singles digit */
+		k = i / 10; /* doubles digit */
+
+		if (k < j)
 		{
-			if (i != j && i < j)
+			putchar(k + '0');
+			putchar(j + '0');
+
+			if (i < 89)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(',');
+				putchar(44);
+				putchar(32);
 			}
 		}
+
+		i++;
 	}
 	putchar('\n');
 
