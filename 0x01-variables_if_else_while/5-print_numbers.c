@@ -2,7 +2,7 @@
 
 /**
  * main - main block
- * Description: Prints numbers in base10
+ * Description: Prints numbers of base10
  * Return: 0
  */
 
@@ -10,9 +10,9 @@ int main(void)
 {
 	int base10values;
 
-	for (i = 0; i < 10; i++)
+	for (base10values = 0; base10values < 10; base10values++)
 	{
-		printf("%i", i);
+		printf("%i", base10values);
 	}
 	putchar('\n');
 
