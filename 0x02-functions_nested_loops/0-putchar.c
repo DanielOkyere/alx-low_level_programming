@@ -11,7 +11,7 @@ int main(void)
 	char printPuchar[] = "_putchar";
 	int i = 0;
 
-	while (printPuchar != '\o')
+	while (printPuchar <= 'r')
 	{
 		_putchar(printPuchar[i]);
 		i++;
