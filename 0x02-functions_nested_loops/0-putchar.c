@@ -1,13 +1,14 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - main function
- * Description: This function prints `_putchar`
- * Return: 0
+ * _putchar - _putchar function
+ * @c: The character to print
+ *
+ * Return: On success 1
+ * On error -1 is returned, and errno is set appropriately
  */
 
-int main(void)
+int _putchar(char c)
 {
-	write(_putchar());
-	return (0);
+	return (write(1, &c, 1));
 }
