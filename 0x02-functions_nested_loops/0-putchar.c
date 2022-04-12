@@ -1,12 +1,13 @@
 #include <stdio.h>
-
+#include <main.h>
 /**
- * _putchar - putchar
+ * main - main function
  * Description: This function prints `_putchar`
  * Return: 0
  */
 
-int _putchar(void)
+int main(void)
 {
+	write(_putchar());
 	return (0);
 }
