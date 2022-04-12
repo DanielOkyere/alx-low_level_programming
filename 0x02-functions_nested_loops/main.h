@@ -9,6 +9,6 @@
 
 int main(void)
 {
-	_putchar();
+	write(_putchar());
 	return (0);
 }
