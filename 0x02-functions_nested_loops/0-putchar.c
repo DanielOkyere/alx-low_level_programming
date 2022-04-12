@@ -1,4 +1,5 @@
 #include "_putchar.c"
+#include "main.h"
 
 /**
  * main - main block
@@ -8,6 +9,6 @@
 
 int main(void)
 {
-	write(_putchar());
+	_putchar();
 	return (0);
 }
