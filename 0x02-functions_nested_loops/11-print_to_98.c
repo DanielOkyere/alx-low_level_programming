@@ -3,10 +3,10 @@
  * print_to_98 - print_to_98
  * @n: int number to be printed
  * Description: prints a number from n upto 98
- * Return: int
+ * Return: void
  */
 
-int print_to_98(int n)
+void print_to_98(int n)
 {
 	if (n > 98)
 	{
@@ -35,5 +35,4 @@ int print_to_98(int n)
 		}
 	}
 	_putchar('\n');
-	return (0);
 }
