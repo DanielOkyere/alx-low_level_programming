@@ -11,10 +11,9 @@ int main(void)
 	char printPuchar[] = "_putchar";
 	int i = 0;
 
-	while (printPuchar <= 'r')
+	for (i; i < 9; i++)
 	{
 		_putchar(printPuchar[i]);
-		i++;
 	}
 	_putchar('\n');
 	return (0);
