@@ -9,11 +9,11 @@
 
 void print_to_98(int n)
 {
-	int i = 0;
+	int i;
 
 	if (n == 98)
 	{
-		printf("%d  \n", n);
+		printf("%d \n", n);
 		return;
 	}
 	else
@@ -27,7 +27,7 @@ void print_to_98(int n)
 		}
 		else
 		{
-			for (i = n; n>= 98; i--)
+			for (i = n; n >= 98; i--)
 			{
 				printf("%d, ", i);
 			}
