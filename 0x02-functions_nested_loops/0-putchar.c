@@ -1,4 +1,3 @@
-#include "_putchar.c"
 #include "main.h"
 
 /**
@@ -9,5 +8,14 @@
 
 int main(void)
 {
+	char printPuchar[] = "_putchar";
+	int i = 0;
+
+	while (printPuchar != '\0')
+	{
+		_putchar(printPuchar[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
