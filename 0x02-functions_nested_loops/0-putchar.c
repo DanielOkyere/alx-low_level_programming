@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+
 /**
  * main - main function
  * Description: This function prints `_putchar`
