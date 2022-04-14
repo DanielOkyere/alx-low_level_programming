@@ -6,21 +6,16 @@
  * Description: Prints out n number of lines
  * Return: void
  */
-
 void print_line(int n)
 {
-	int i = 0;
+	int c;
 
-	if (n < 0 || n == 0)
-	{
-		_putchar('\n');
-		return;
-	}
-
-	while (i <= n)
+	c = 0;
+	while (c < n)
 	{
 		_putchar('_');
-		i++;
+
+		c++;
 	}
 	_putchar('\n');
 }
