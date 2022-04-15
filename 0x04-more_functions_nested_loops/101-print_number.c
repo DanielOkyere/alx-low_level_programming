@@ -39,7 +39,7 @@ int exponent(int x, int y)
 void print_number(int number)
 {
 	int size, digit;
-	long counter, sign;
+	int counter, sign;
 
 	sign = 1;
 	digit = 0;
@@ -58,7 +58,7 @@ void print_number(int number)
 		counter = counter / 10;
 	}
 
-	counter = sign * (long)number;
+	counter = sign * number;
 
 	while (size >= 2)
 	{
