@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * puts_half - print second half of a string
  * @str: char array string type
@@ -16,7 +16,7 @@ void puts_half(char *str)
 	i++;
 	for (i /= 2; str[i] != '\0'; i++)
 	{
-		_putchar(str[i]);
+		putchar(str[i]);
 	}
-	_putchar('\n');
+	putchar('\n');
 }
