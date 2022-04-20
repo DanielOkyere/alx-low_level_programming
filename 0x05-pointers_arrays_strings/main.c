@@ -2,9 +2,10 @@
 #include <stdio.h>
 int main(void)
 {
+	char s[10] = "My School";
 
-	char *str;
-	str = "I do not fear computers. I fear the lack of the - Isaac Asimov";
-	print_rev(str);
+	printf("%s\n", s);
+	rev_string(s);
+	printf("%s\n", s);
 	return (0);
 }
