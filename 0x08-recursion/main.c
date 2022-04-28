@@ -4,9 +4,9 @@
 int main(void)
 {
 	int n;
-	n = factorial(1);
+	n = _pow_recursion(1, 10);
 	printf("%d\n", n);
-	n = factorial(5);
+	n = _pow_recursion(1024, 0);
 	printf("%d\n", n);
 
 	return (0);
