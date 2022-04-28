@@ -4,10 +4,24 @@
 int main(void)
 {
 	int n;
-	n = _sqrt_recursion(1);
+	int r;
+
+	n = is_prime_number(1);
 	printf("%d\n", n);
-	n = _sqrt_recursion(17);
+	n = is_prime_number(1024);
 	printf("%d\n", n);
+	r = is_prime_number(16);
+    printf("%d\n", r);
+    r = is_prime_number(17);
+    printf("%d\n", r);
+    r = is_prime_number(25);
+    printf("%d\n", r);
+    r = is_prime_number(-1);
+    printf("%d\n", r);
+    r = is_prime_number(113);
+    printf("%d\n", r);
+    r = is_prime_number(7919);
+    printf("%d\n", r);
 
 	return (0);
 }
