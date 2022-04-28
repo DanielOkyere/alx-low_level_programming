@@ -4,7 +4,9 @@
 int main(void)
 {
 	int n;
-	n = _strlen_recursion("Corbin Coleman");
+	n = factorial(1);
+	printf("%d\n", n);
+	n = factorial(5);
 	printf("%d\n", n);
 
 	return (0);
