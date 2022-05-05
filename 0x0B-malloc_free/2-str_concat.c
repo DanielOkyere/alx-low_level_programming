@@ -12,8 +12,8 @@ int _strlen(char *c);
 char *str_concat(char *s1, char *s2)
 {
 	char *nwptr;
-	int str1 = _strlen(s1);
-	int str2 = _strlen(s2);
+	int str1 = _strlen(NULL ? "" : s1);
+	int str2 = _strlen(NULL ? "" : s2);
 	int i = 0;
 	int j = 0;
 
