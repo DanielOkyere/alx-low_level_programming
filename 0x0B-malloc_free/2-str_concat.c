@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stddef.h>
-int _strlen(char *c);
+
 /**
  * str_concat - string concat
  * @s1: string 1
@@ -12,10 +12,18 @@ int _strlen(char *c);
 char *str_concat(char *s1, char *s2)
 {
 	char *nwptr;
-	int str1 = _strlen(NULL ? "" : s1);
-	int str2 = _strlen(NULL ? "" : s2);
+	int str1;
+	int str2;
 	int i = 0;
 	int j = 0;
+
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	str1 = _strlen(s1);
+	str2 = _strlen(s2);
 
 	nwptr = malloc(sizeof(char) * (str1 + str2 + 1));
 	if (nwptr == NULL)
