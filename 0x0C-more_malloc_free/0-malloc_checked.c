@@ -9,7 +9,11 @@
 
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *nwptr;
+	void *nwptr;
+
+	if (b == NULL)
+		_exit(98);
+
 
 	nwptr = malloc(sizeof(b));
 
