@@ -1,8 +1,6 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
-#endif
+#ifndef MACRO_H
+#define MACRO_H
 
-#ifndef SUM
 #define SUM(x, y) ((x) + (y))
-typedef int make_iso_happy;
+
 #endif
