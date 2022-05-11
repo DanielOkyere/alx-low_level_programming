@@ -1,8 +1,7 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef MACRO_H
+#define MACRO_H
 #endif
 
 #ifndef SIZE
-typedef int make_iso_compiler_happy;
 #define SIZE 1024
 #endif
