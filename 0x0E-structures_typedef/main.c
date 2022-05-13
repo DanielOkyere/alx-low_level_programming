@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include "dog.h"
 
@@ -8,7 +9,11 @@
  */
 int main(void)
 {
-	init_dog(NULL, "Ghost", 4.75, "Jon Snow");
-	printf("Ok\n");
+	struct dog my_dog;
+
+	my_dog.name = NULL;
+	my_dog.age = .0f;
+	my_dog.owner = NULL;
+	print_dog(&my_dog);
 	return (0);
 }
