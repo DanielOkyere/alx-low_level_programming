@@ -8,7 +8,7 @@
  * @argv: command line arguments
  * Return: int
  */
-int main(argc, argv[])
+int main(int argc, char *argv[])
 {
 	int a, b;
 	int (*o)(int, int);
