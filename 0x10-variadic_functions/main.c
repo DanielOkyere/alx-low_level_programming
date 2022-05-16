@@ -8,8 +8,6 @@
  */
 int main(void)
 {
-	print_strings(", ",2, "Jay", "DJango");
-	printf("------- null added-----\n");
-	print_strings(NULL,2, "","");
+	print_all("ceis",'B',3,"stSchool");
 	return (0);
 }
