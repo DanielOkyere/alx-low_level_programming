@@ -8,7 +8,8 @@
  */
 int main(void)
 {
-	print_numbers(NULL,4,9,90,30,1);
-	print_numbers(",", 4, 0, 98, -1024, 402);
+	print_strings(", ",2, "Jay", "DJango");
+	printf("------- null added-----\n");
+	print_strings(NULL,2, "","");
 	return (0);
 }
