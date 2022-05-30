@@ -26,15 +26,13 @@ int main(int argc, char *argv[])
 {
 	int ifd, ofd, ist, ost;
 	char buf[MAXSIZE];
-	mode_t mode;
 
-	mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 	if (argc != 3)
 		dprintf(SE, "Usage: cp file_from file_to\n"), exit(97);
 	ifd = open(argv[1], O_RDONLY);
 	if (ifd == -1)
 		printfail(argv[1], 0), exit(98);
-	ofd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, mode);
+	ofd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (ofd == -1)
 		printfail(argv[2], 0), exit(99);
 	do {
