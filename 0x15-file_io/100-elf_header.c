@@ -298,5 +298,5 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	pentry(hd->e_entry, hd->e_ident);
 	free(hd);
 	close_elf(ofd);
-	return(0);
+	return (0);
 }
