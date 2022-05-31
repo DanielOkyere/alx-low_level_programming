@@ -114,7 +114,7 @@ void pdata(unsigned char *e_ident)
 /**
  * pversion - Prints the version of an ELF header.
  * @e_ident: A pointer to an array containing the ELF version.
-ppp */
+ */
 void pversion(unsigned char *e_ident)
 {
 	printf("  Version:                           %d",
@@ -258,6 +258,7 @@ void close_elf(int elf)
  * main - Displays information in elf file
  * @argc: int
  * @argv: array of chars
+ * Return: true
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
