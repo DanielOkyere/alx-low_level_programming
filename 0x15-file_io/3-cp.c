@@ -10,11 +10,11 @@
  * @flag: helps print different message
  * Return: void
  */
-void printfail(char *arg, int flag)
+void printfail(void *arg, int flag)
 {
 	if (flag > 0)
-		dprintf(SE, "Error: Can't write to %s\n", arg);
-	dprintf(SE, "Error: Can't read from file %s\n", arg);
+		dprintf(SE, "Error: Can't write to %s\n", *arg);
+	dprintf(SE, "Error: Can't read from file %s\n", *arg);
 }
 /**
  * main - copies content of file to another file
