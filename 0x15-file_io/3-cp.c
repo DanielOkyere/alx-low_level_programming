@@ -10,11 +10,11 @@
  * @flag: helps print different message
  * Return: void
  */
-void printfail(void *arg, int flag)
+void printfail(char *arg, int flag)
 {
-	if (flag > 0)
-		dprintf(SE, "Error: Can't write to %s\n", *arg);
-	dprintf(SE, "Error: Can't read from file %s\n", *arg);
+	if (flag == 1)
+		dprintf(SE, "Error: Can't write to %s\n", arg);
+	dprintf(SE, "Error: Can't read from file %s\n", arg);
 }
 /**
  * main - copies content of file to another file
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 		printfail(argv[1], 0), exit(98);
 	ofd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (ofd == -1)
-		printfail(argv[2], 0), exit(99);
+		printfail(argv[2], 1), exit(99);
 	do {
 		ist = read(ifd, buf, MAXSIZE);
 		if (ist == -1)
