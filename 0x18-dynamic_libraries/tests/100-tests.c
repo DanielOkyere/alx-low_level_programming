@@ -1,36 +1,27 @@
 #include "100-tests.h"
 
 int add(int a, int b)
-{
-	int result = a + b;
-	
-	return (result);
+{	
+	return (a + b);
 }
 
 int sub(int a, int b)
 {
-	int result = a - b;
-
-	return (result);
+	return (a - b);
 }
 
 int mul(int a, int b)
 {
-	int result = a * b;
-
-	return (result);
+	return (a * b);
 }
 
 int div(int a, int b)
 {
-	int result = a - b;
-
-	return (result);
+	return (a / b);
 }
 
 int mod(int a, int b)
 {
-	int result = a % b;
 
-	return (result);
+	return (a % b);
 }
