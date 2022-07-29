@@ -1,6 +1,23 @@
 #include "hash_tables.h"
 
 /**
+ * _strdup - custom strdup
+ *
+ * @str: string to be duplicated
+ * Return: char*
+ */
+char *_strdup(const char *str)
+{
+	char *p;
+
+	p = (char *)malloc(strlen(str) + 1);
+	if (p != NULL)
+		strcpy(p, str);
+
+	return (p);
+}
+
+/**
  * hash_table_set - sets value for hashtable
  *
  * @ht: hash table pointer
@@ -21,7 +38,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht->array[index] != NULL && strcmp(ht->array[index]->key, key) == 0)
 	{
-		ht->array[index]->value = strdup(value);
+		ht->array[index]->value = _strdup(value);
 		return (1);
 	}
 
@@ -29,8 +46,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!new_node)
 		return (0);
 
-	new_node->key = strdup(key);
-	new_node->value = strdup(value);
+	new_node->key = _strdup(key);
+	new_node->value = _strdup(value);
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
 	return (1);
