@@ -1,0 +1,12 @@
+# usage
+# make 		# compile all binary
+# make clean 	# remove All bins
+
+CC = gcc		# compiler to use
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+
+NAME = school
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
