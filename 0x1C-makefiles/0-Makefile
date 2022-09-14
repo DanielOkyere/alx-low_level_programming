@@ -2,5 +2,5 @@
 # make		# compile all files
 # make clean 	# remove All files and objects
 
-all:
+all: main.c school.c
 	gcc main.c school.c -o school
